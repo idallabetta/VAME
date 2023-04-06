@@ -154,7 +154,7 @@ def get_animal_frames(cfg, filename, pose_ref_index, start, length, subtract_bac
     time_window = cfg['time_window']
     lag = int(time_window / 2)
     #read out data
-    data = pd.read_csv(os.path.join(path_to_file,"videos","pose_estimation",filename+'.csv'), skiprows = 2)
+    data = pd.read_csv(os.path.join(path_to_file,"videos","pose_estimation",filename+'.csv'), skiprows = 4, header=None)
     data_mat = pd.DataFrame.to_numpy(data)
     data_mat = data_mat[:,1:]
 

@@ -28,3 +28,4 @@ dependencies:
     - networkx    
     - tqdm
     - hmmlearn
+    - -e 'D:\Code\VAME'

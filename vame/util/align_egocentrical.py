@@ -254,7 +254,7 @@ def play_aligned_video(a, n, frame_count):
 def alignment(path_to_file, filename, pose_ref_index, video_format, crop_size, confidence, use_video=False, check_video=False):
     
     #read out data
-    data = pd.read_csv(os.path.join(path_to_file,'videos','pose_estimation',filename+'.csv'), skiprows = 2)
+    data = pd.read_csv(os.path.join(path_to_file,'videos','pose_estimation',filename+'.csv'), skiprows = 4, header=None)
     data_mat = pd.DataFrame.to_numpy(data)
     data_mat = data_mat[:,1:] 
     
