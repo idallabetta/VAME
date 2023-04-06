@@ -57,7 +57,7 @@ def csv_to_numpy(config):
     for file in filename:
         print(file)
         # Read in your .csv file, skip the first two rows and create a numpy array
-        data = pd.read_csv(os.path.join(path_to_file,"videos","pose_estimation",file+'.csv'), skiprows = 3, header=None)
+        data = pd.read_csv(os.path.join(path_to_file,"videos","pose_estimation",file+'.csv'), skiprows = 4, header=None)
         data_mat = pd.DataFrame.to_numpy(data)
         data_mat = data_mat[:,1:]
 
