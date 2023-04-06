@@ -147,7 +147,6 @@ def align_mouse(path_to_file,filename,video_format,crop_size, pose_list,
     
     for i in pose_list:
         for j in i:
-            print(j[2])
             if j[2] <= confidence:
                 j[0],j[1] = np.nan, np.nan      
                 

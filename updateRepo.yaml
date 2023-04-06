@@ -10,3 +10,4 @@ dependencies:
   - pip
   - pip:
     - -e 'D:\Code\VAME'
+#     - -e git+ssh://git@github.com:idallabetta/VAME.git # DOES NOT WORK
