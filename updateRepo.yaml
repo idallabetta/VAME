@@ -1,0 +1,12 @@
+# updateRepo.yaml
+#
+# use to update IDB fork of VAME repo
+# update:  conda env update -f updateRepo.yaml
+name: VAME
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - pip
+  - pip:
+    - -e 'D:\Code\VAME'
