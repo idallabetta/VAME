@@ -225,9 +225,10 @@ def align_mouse(path_to_file,filename,video_format,crop_size, pose_list,
 #play aligned video
 def play_aligned_video(a, n, frame_count):
     colors = [(255,0,0),(0,255,0),(0,0,255),(255,255,0),(255,0,255),(0,255,255),(0,0,0),(255,255,255)]
-    
+
     for i in range(frame_count):
         # Capture frame-by-frame
+        print('is this working')
         ret, frame = True,a[i]
         if ret == True:
             
