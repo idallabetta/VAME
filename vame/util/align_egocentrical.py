@@ -228,7 +228,9 @@ def play_aligned_video(a, n, frame_count):
 
     for i in range(frame_count):
         # Capture frame-by-frame
-        print('is this working')
+        print(frame_count)
+        print('wtf')
+        print(a)
         ret, frame = True,a[i]
         if ret == True:
             
